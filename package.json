@@ -1,0 +1,27 @@
+{
+  "name": "MMM-Monzo-Pot",
+  "version": "0.1.0",
+  "description": "MagicMirror 2 module to get the balance of a Pot from the Monzo API.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/threesquared/MMM-Monzo-Pot"
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "balance",
+    "bank",
+    "Monzo",
+    "module"
+  ],
+  "author": "Ben Speakman",
+  "contributors": "https://github.com/threesquared/MMM-Monzo-Pot/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/threesquared/MMM-Monzo-Pot/issues"
+  },
+  "homepage": "https://github.com/threesquared/MMM-Monzo-Pot#readme",
+  "dependencies": {
+    "monzo-js": "0.0.8"
+  }
+}

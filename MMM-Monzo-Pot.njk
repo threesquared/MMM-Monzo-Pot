@@ -1,0 +1,20 @@
+{% if loading %}
+
+    <div class="dimmed small">Loading...</div>
+
+{% else %}
+
+    <table class="small">
+
+    {% for pot in pots %}
+
+        <tr class="normal">
+            <td>{{ pot.name }}</td>
+            <td class="title bright ">{{ pot.balance }}</td>
+        </tr>
+
+    {% endfor %}
+
+    </table>
+
+{% endif %}
