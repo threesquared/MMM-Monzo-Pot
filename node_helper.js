@@ -70,9 +70,10 @@ module.exports = NodeHelper.create({
 
         monzo.pots.all().then((pots) => {
             this.sendSocketNotification('POT_DATA', JSON.stringify([...pots]));
-        }).catch((error) => {
-            // Check for expired token and refresh
-            console.log('Could not fetch Monzo data, have you authenticated?', error);
+        }).catch(() => {
+            if (accessToken) {
+                this.refreshToken();
+            }
         });
     },
 
